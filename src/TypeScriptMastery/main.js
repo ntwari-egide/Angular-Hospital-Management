@@ -29,15 +29,22 @@ drawFigure({
 });
 // CLASSES IN TYPESCRIPT
 var LawFirm = /** @class */ (function () {
-    function LawFirm() {
+    //constractors
+    function LawFirm(name, num, location) {
         var _this = this;
-        this.getLocation = function () {
-            console.log("District : " + _this.location);
+        this.getData = function () {
+            console.log(_this.name + " law firm located : " + _this.location + " with " + _this.numberOfMembers + " members");
         };
+        this.name = name;
+        this.numberOfMembers = num;
+        this.location = location;
     }
     return LawFirm;
 }());
 //memory alocation
 // let lawFirm: LawFirm = new LawFirm()
-var lawFirm1 = new LawFirm();
-lawFirm1.getLocation();
+var lawFirm1 = new LawFirm("Trust Chamber", 23, "Kayonza");
+// lawFirm1.location = 'kayonza'
+// lawFirm1.name = 'Ishema'
+// lawFirm1.numberOfMembers = 23
+lawFirm1.getData();

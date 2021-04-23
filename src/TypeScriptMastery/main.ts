@@ -46,6 +46,13 @@ class LawFirm {
     numberOfMembers: Number
     location: String
 
+    //constractors
+    constructor(name: String,num: Number,location: String){
+        this.name = name
+        this.numberOfMembers = num
+        this.location = location
+    }
+
     getData = () => {
         console.log(`${this.name} law firm located : ${this.location} with ${this.numberOfMembers} members`);
         
@@ -55,9 +62,9 @@ class LawFirm {
 //memory alocation
 
 // let lawFirm: LawFirm = new LawFirm()
-let lawFirm1 = new LawFirm()
-lawFirm1.location = 'kayonza'
-lawFirm1.name = 'Ishema'
-lawFirm1.numberOfMembers = 23
+let lawFirm1 = new LawFirm("Trust Chamber",23,"Kayonza")
+// lawFirm1.location = 'kayonza'
+// lawFirm1.name = 'Ishema'
+// lawFirm1.numberOfMembers = 23
 
-lawFirm1.getLocation()
+lawFirm1.getData()
