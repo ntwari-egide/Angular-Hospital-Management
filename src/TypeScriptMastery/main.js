@@ -19,7 +19,7 @@ var endWithApp = message.endsWith('app');
 var endWithAppAlternativeWay = message.endsWith('app');
 console.log("End with 1: ", endWithApp);
 console.log("End with 2: ", endWithAppAlternativeWay);
-// INLINE ANNOTATION
+// let drawFigure = (point: {x: number,y: number}) => {
 var drawFigure = function (point) {
     console.log("Line with x: ", point.x);
 };
@@ -27,3 +27,15 @@ drawFigure({
     x: 2,
     y: 3
 });
+// CLASSES IN TYPESCRIPT
+var LawFirm = /** @class */ (function () {
+    function LawFirm() {
+        var _this = this;
+        this.getLocation = function () {
+            console.log("District : " + _this.location.district + ", Sector: " + _this.location.sector + ",Cell: " + _this.location.cell);
+        };
+    }
+    return LawFirm;
+}());
+var lawFirm;
+lawFirm.getLocation();

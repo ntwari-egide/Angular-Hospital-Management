@@ -55,3 +55,8 @@ class LawFirm {
         
     }
 }
+
+//memory alocation
+
+let lawFirm: LawFirm
+lawFirm.getLocation()
