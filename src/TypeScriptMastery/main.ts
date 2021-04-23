@@ -72,4 +72,4 @@ let lawFirm2 = new LawFirm(null)
 // lawFirm1.numberOfMembers = 23
 
 lawFirm1.getData()
-lawFirm2.getData
+lawFirm2.getData()
