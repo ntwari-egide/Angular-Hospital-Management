@@ -40,3 +40,16 @@ drawFigure({
     y: 3
 })
 
+import {LawFirm} from './lawfirm'
+
+// let lawFirm: LawFirm = new LawFirm()
+let lawFirm1 = new LawFirm("Trust Chamber",23,"Kayonza")
+let lawFirm2 = new LawFirm('Ishema')
+// lawFirm1.location = 'kayonza'
+// lawFirm1.name = 'Ishema'
+// lawFirm1.numberOfMembers = 23
+
+lawFirm1.getData()
+lawFirm2.getData()
+
+// We use _x : to avoid the commel case issues that arise
