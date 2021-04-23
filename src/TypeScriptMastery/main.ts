@@ -46,8 +46,8 @@ class LawFirm {
     numberOfMembers: Number
     location: String
 
-    getLocation = () => {
-        console.log(`District : ${this.location}`);
+    getData = () => {
+        console.log(`${this.name} law firm located : ${this.location} with ${this.numberOfMembers} members`);
         
     }
 }
@@ -56,4 +56,8 @@ class LawFirm {
 
 // let lawFirm: LawFirm = new LawFirm()
 let lawFirm1 = new LawFirm()
+lawFirm1.location = 'kayonza'
+lawFirm1.name = 'Ishema'
+lawFirm1.numberOfMembers = 23
+
 lawFirm1.getLocation()
