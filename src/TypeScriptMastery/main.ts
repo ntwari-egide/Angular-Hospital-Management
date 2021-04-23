@@ -42,9 +42,9 @@ drawFigure({
 
 // CLASSES IN TYPESCRIPT
 class LawFirm {
-    name: String
-    numberOfMembers: Number
-    location: String
+    private name: String
+    private numberOfMembers: Number
+    private location: String
 
     //constractors
         // constructor(name: String,num: Number,location: String){
