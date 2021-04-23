@@ -46,7 +46,7 @@ var LawFirm = /** @class */ (function () {
 //memory alocation
 // let lawFirm: LawFirm = new LawFirm()
 var lawFirm1 = new LawFirm("Trust Chamber", 23, "Kayonza");
-var lawFirm2 = new LawFirm(null);
+var lawFirm2 = new LawFirm('Ishema');
 // lawFirm1.location = 'kayonza'
 // lawFirm1.name = 'Ishema'
 // lawFirm1.numberOfMembers = 23
