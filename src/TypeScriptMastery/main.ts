@@ -9,3 +9,7 @@ let lawfirmOthers: any[] = ["cow",2020,"kayonza",false]
 enum ActiveLawfirms {Ishema = '2020-12-03',TrustChamber = '2021-02-20'};
 
 let firstActiveLawfirm = ActiveLawfirms.Ishema;
+
+//Type assertions
+
+let message = 'ntwari is ceo and co-founder of Yombi app'
