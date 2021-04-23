@@ -30,6 +30,8 @@ drawFigure({
 // CLASSES IN TYPESCRIPT
 var LawFirm = /** @class */ (function () {
     //constractors
+    // constructor(name: String,num: Number,location: String){
+    // making parameters optional (?)
     function LawFirm(name, num, location) {
         var _this = this;
         this.getData = function () {
@@ -44,7 +46,9 @@ var LawFirm = /** @class */ (function () {
 //memory alocation
 // let lawFirm: LawFirm = new LawFirm()
 var lawFirm1 = new LawFirm("Trust Chamber", 23, "Kayonza");
+var lawFirm2 = new LawFirm(null);
 // lawFirm1.location = 'kayonza'
 // lawFirm1.name = 'Ishema'
 // lawFirm1.numberOfMembers = 23
 lawFirm1.getData();
+lawFirm2.getData;

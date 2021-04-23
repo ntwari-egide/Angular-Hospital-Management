@@ -47,7 +47,10 @@ class LawFirm {
     location: String
 
     //constractors
-    constructor(name: String,num: Number,location: String){
+        // constructor(name: String,num: Number,location: String){
+    
+    // making parameters optional (?)
+    constructor(name?: String,num?: Number,location?: String){
         this.name = name
         this.numberOfMembers = num
         this.location = location
@@ -63,8 +66,10 @@ class LawFirm {
 
 // let lawFirm: LawFirm = new LawFirm()
 let lawFirm1 = new LawFirm("Trust Chamber",23,"Kayonza")
+let lawFirm2 = new LawFirm(null)
 // lawFirm1.location = 'kayonza'
 // lawFirm1.name = 'Ishema'
 // lawFirm1.numberOfMembers = 23
 
 lawFirm1.getData()
+lawFirm2.getData
