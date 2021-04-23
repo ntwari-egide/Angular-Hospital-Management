@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var lawfirmName;
 var lawfirmAge;
 var lawfirmNumberOfMembers;
@@ -27,28 +29,13 @@ drawFigure({
     x: 2,
     y: 3
 });
-// CLASSES IN TYPESCRIPT
-var LawFirm = /** @class */ (function () {
-    //constractors
-    // constructor(name: String,num: Number,location: String){
-    // making parameters optional (?)
-    function LawFirm(name, num, location) {
-        var _this = this;
-        this.getData = function () {
-            console.log(_this.name + " law firm located : " + _this.location + " with " + _this.numberOfMembers + " members");
-        };
-        this.name = name;
-        this.numberOfMembers = num;
-        this.location = location;
-    }
-    return LawFirm;
-}());
-//memory alocation
+var lawfirm_1 = require("./lawfirm");
 // let lawFirm: LawFirm = new LawFirm()
-var lawFirm1 = new LawFirm("Trust Chamber", 23, "Kayonza");
-var lawFirm2 = new LawFirm('Ishema');
+var lawFirm1 = new lawfirm_1.LawFirm("Trust Chamber", 23, "Kayonza");
+var lawFirm2 = new lawfirm_1.LawFirm('Ishema');
 // lawFirm1.location = 'kayonza'
 // lawFirm1.name = 'Ishema'
 // lawFirm1.numberOfMembers = 23
 lawFirm1.getData();
 lawFirm2.getData();
+// We use _x : to avoid the commel case issues that arise
