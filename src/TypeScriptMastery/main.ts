@@ -73,3 +73,5 @@ let lawFirm2 = new LawFirm('Ishema')
 
 lawFirm1.getData()
 lawFirm2.getData()
+
+// We use _x : to avoid the commel case issues that arise
