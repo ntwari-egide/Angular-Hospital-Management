@@ -22,3 +22,15 @@ let endWithAppAlternativeWay = (message as String).endsWith('app')
 console.log("End with 1: ",endWithApp);
 console.log("End with 2: ",endWithAppAlternativeWay);
 
+// INLINE ANNOTATION
+
+let drawFigure = (point: {x: number,y: number}) => {
+    console.log("Line with x: ",point.x);
+    
+} 
+
+drawFigure({
+    x: 2,
+    y: 3
+})
+

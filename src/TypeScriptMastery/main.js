@@ -19,3 +19,11 @@ var endWithApp = message.endsWith('app');
 var endWithAppAlternativeWay = message.endsWith('app');
 console.log("End with 1: ", endWithApp);
 console.log("End with 2: ", endWithAppAlternativeWay);
+// INLINE ANNOTATION
+var drawFigure = function (point) {
+    console.log("Line with x: ", point.x);
+};
+drawFigure({
+    x: 2,
+    y: 3
+});
