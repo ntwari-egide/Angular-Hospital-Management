@@ -12,4 +12,13 @@ let firstActiveLawfirm = ActiveLawfirms.Ishema;
 
 //Type assertions
 
-let message = 'ntwari is ceo and co-founder of Yombi app'
+let message
+message = 'ntwari is ceo and co-founder of Yombi app'
+
+
+let endWithApp = (<String>message).endsWith('app')
+let endWithAppAlternativeWay = (message as String).endsWith('app')
+
+console.log("End with 1: ",endWithApp);
+console.log("End with 2: ",endWithAppAlternativeWay);
+

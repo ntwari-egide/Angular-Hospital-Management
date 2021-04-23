@@ -12,3 +12,10 @@ var ActiveLawfirms;
 })(ActiveLawfirms || (ActiveLawfirms = {}));
 ;
 var firstActiveLawfirm = ActiveLawfirms.Ishema;
+//Type assertions
+var message;
+message = 'ntwari is ceo and co-founder of Yombi app';
+var endWithApp = message.endsWith('app');
+var endWithAppAlternativeWay = message.endsWith('app');
+console.log("End with 1: ", endWithApp);
+console.log("End with 2: ", endWithAppAlternativeWay);
