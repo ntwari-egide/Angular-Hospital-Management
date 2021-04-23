@@ -6,3 +6,6 @@ let lawfirmMembers: String [] = ["Ntwari","Egide","Mugisha","Jules"]
 let lawfirmOthers: any[] = ["cow",2020,"kayonza",false]
 
 // Working with enums
+enum ActiveLawfirms {Ishema,TrustChamber};
+
+let firstActiveLawfirm = ActiveLawfirms.Ishema;
