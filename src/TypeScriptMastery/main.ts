@@ -44,19 +44,16 @@ drawFigure({
 class LawFirm {
     name: String
     numberOfMembers: Number
-    location: {
-        district: String,
-        sector: String,
-        cell: String
-    }
+    location: String
 
     getLocation = () => {
-        console.log(`District : ${this.location.district}, Sector: ${this.location.sector},Cell: ${this.location.cell}`);
+        console.log(`District : ${this.location}`);
         
     }
 }
-
+ 
 //memory alocation
 
-let lawFirm: LawFirm
-lawFirm.getLocation()
+// let lawFirm: LawFirm = new LawFirm()
+let lawFirm1 = new LawFirm()
+lawFirm1.getLocation()

@@ -32,10 +32,12 @@ var LawFirm = /** @class */ (function () {
     function LawFirm() {
         var _this = this;
         this.getLocation = function () {
-            console.log("District : " + _this.location.district + ", Sector: " + _this.location.sector + ",Cell: " + _this.location.cell);
+            console.log("District : " + _this.location);
         };
     }
     return LawFirm;
 }());
-var lawFirm;
-lawFirm.getLocation();
+//memory alocation
+// let lawFirm: LawFirm = new LawFirm()
+var lawFirm1 = new LawFirm();
+lawFirm1.getLocation();
