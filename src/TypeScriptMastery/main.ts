@@ -24,9 +24,15 @@ console.log("End with 2: ",endWithAppAlternativeWay);
 
 // INLINE ANNOTATION
 
-let drawFigure = (point: {x: number,y: number}) => {
+// dynamic data types: interfaces
+interface Point {
+    x: number,
+    y: number
+}
+
+// let drawFigure = (point: {x: number,y: number}) => {
+let drawFigure = (point: Point) => {
     console.log("Line with x: ",point.x);
-    
 } 
 
 drawFigure({
@@ -34,3 +40,18 @@ drawFigure({
     y: 3
 })
 
+// CLASSES IN TYPESCRIPT
+class LawFirm {
+    name: String
+    numberOfMembers: Number
+    location: {
+        district: String,
+        sector: String,
+        cell: String
+    }
+
+    getLocation = () => {
+        console.log(`District : ${this.location.district}, Sector: ${this.location.sector},Cell: ${this.location.cell}`);
+        
+    }
+}
