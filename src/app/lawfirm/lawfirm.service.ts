@@ -3,5 +3,6 @@ export class LawfirmsService{
 
     getLawfirms(){
         this.listOfLawfirms = ["Ishema ","Trust Chamber","Care Chamber"]
+        return this.listOfLawfirms
     }
 }

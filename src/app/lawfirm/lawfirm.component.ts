@@ -1,3 +1,4 @@
+import { LawfirmsService } from './lawfirm.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class LawfirmComponent implements OnInit {
   district = "Kayonza"
   lawFirms;
-  constructor() { }
+  constructor(service: LawfirmsService) { 
+      this.lawFirms = service.getLawfirms()
+  }
 
   ngOnInit(): void {
   }
