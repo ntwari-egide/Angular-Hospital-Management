@@ -1,15 +1,15 @@
-<h1>Lawfirms in Kayonza</h1>
+<h1>Lawfirms in {{district}}</h1>
 
 <div>
     <form class="form">
         <label>Add law firm name</label>
         <input type="text" />
-        <input type="button" value="submit law firm">
+        <input type="button" value="submit law firm" />
     </form>
-    <h>List of law firms</h2>
+    <h2>List of law firms</h2>
     <div>
         <ul>
-            <li></li>
+            <li *ngFor="let lawfirm of lawFirms">{{lawfirm}}</li>
         </ul>
     </div>
 </div>

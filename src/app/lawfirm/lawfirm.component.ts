@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lawfirm.component.css']
 })
 export class LawfirmComponent implements OnInit {
-
+  district = "Kayonza"
+  lawFirms;
   constructor() { }
 
   ngOnInit(): void {
