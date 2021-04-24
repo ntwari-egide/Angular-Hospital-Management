@@ -1,3 +1,4 @@
+import { CoursesService } from './courses.service';
 import {Component} from "@angular/core"
 
 //decorative function
@@ -15,6 +16,10 @@ export class CoursesComponent {
     courses;
 
     // in dependency injection 
+    constructor(){
+        let service = new CoursesService()
+        this.courses = service.getCourses()
+    }
 }
 
 // importing to the module
