@@ -1,3 +1,4 @@
+import { LawfirmsService } from './lawfirm/lawfirm.service';
 import { CoursesService } from './courses.service';
 import { CoursesComponent } from './course.component';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { LawfirmComponent } from './lawfirm/lawfirm.component';
     BrowserModule
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    LawfirmsService
   ],
   bootstrap: [AppComponent]
 })

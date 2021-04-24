@@ -5,4 +5,8 @@ export class LawfirmsService{
         this.listOfLawfirms = ["Ishema ","Trust Chamber","Care Chamber"]
         return this.listOfLawfirms
     }
+
+    addLawfirm(lawfirmName : String){
+        this.listOfLawfirms.push(lawfirmName)
+    }
 }
