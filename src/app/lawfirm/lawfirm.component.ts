@@ -16,4 +16,9 @@ export class LawfirmComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addLawfirm(){
+    alert('data is submitted!')
+      // service.addLawfirm
+  }
+
 }
