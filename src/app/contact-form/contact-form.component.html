@@ -5,7 +5,7 @@
             <input required minlength="3" ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text" class="form-control" id="firstName">
             <div  class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
                 <div *ngIf="firstName.errors.required">First name is required</div>
-                <div *ngIf="firstName.errors.minlength">First name is must be atmost {{firstName.errors.requiredLength}} characters</div>
+                <div *ngIf="firstName.errors.minlength">First name is must be atleast {{firstName.errors.minlength.requiredLength}} characters</div>
             </div>
         </div>
         <div class="form-group">
