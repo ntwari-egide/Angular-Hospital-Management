@@ -3,10 +3,11 @@
         <div class="form-group">        
             <label for="firstName">Enter first name : </label>
             <input ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text" class="form-control" id="firstName">
+            <div class="alert alert-danger" *ngIf="!firstName.valid">First name is required. </div>
         </div>
         <div class="form-group">
             <label for="comment">Enter comment: </label>
-            <input type="text" id="comment" class="form-control">
+            <textarea ngModel name="name" type="text" id="comment" class="form-control"></textarea>
         </div>
         <button class="btn btn-primary">Submit</button>
     </form>
