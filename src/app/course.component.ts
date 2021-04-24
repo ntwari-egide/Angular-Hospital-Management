@@ -16,8 +16,8 @@ export class CoursesComponent {
     courses;
 
     // in dependency injection 
-    constructor(){
-        let service = new CoursesService()
+    constructor(service: CoursesService){ // loosely coupled, we need to register this provider
+        // let service = new CoursesService() // tightly coupled component to service
         this.courses = service.getCourses()
     }
 }
