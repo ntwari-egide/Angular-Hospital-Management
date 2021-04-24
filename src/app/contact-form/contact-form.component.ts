@@ -9,8 +9,9 @@ export class ContactFormComponent implements OnInit {
 
   constructor() { }
 
-  log(){
-    
+  log(value: String){
+      console.log("data is changed !: ",value);
+      
   }
 
   ngOnInit(): void {
