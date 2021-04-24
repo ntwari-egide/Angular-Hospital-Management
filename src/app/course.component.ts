@@ -6,6 +6,7 @@ import {Component} from "@angular/core"
     selector : 'courses', //<courses>
     template : `
         <h2>{{ title }}</h2> 
+        <h3>{{courses.length}} courses</h3>
         <ul>
             <li *ngFor="let course of courses"> {{ course }}</li>
         </ul>
