@@ -6,13 +6,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LawfirmComponent } from './lawfirm/lawfirm.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    LawfirmComponent
+    LawfirmComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule
