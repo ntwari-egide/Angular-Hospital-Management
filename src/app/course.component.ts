@@ -12,7 +12,9 @@ import {Component} from "@angular/core"
 })
 export class CoursesComponent { 
     title = "My codes are running here now."
-    courses = ["course 1","course 2","course 3"]
+    courses;
+
+    // in dependency injection 
 }
 
 // importing to the module
