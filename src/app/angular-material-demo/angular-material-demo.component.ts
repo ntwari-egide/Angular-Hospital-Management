@@ -4,17 +4,17 @@ import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
-@Component({
-  selector: 'angular-material-demo',
-  templateUrl: './angular-material-demo.component.html',
-  styleUrls: ['./angular-material-demo.component.css']
-})
-
 export interface State {
   flag : String
   name: String
   population: String
 }
+
+@Component({
+  selector: 'angular-material-demo',
+  templateUrl: './angular-material-demo.component.html',
+  styleUrls: ['./angular-material-demo.component.css']
+})
 
 export class AngularMaterialDemoComponent {
   stateCtrl = new FormControl()
@@ -61,5 +61,5 @@ export class AngularMaterialDemoComponent {
 
     return this.states.filter(state => state.name.toLowerCase().indexOf(filterValue) === 0);
   }
-  
+
 }
