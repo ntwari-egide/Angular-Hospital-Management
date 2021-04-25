@@ -13,7 +13,6 @@ export class TailwindExampleComponent implements OnInit {
   toggleNavbar(){
     this.showMenu = !this.showMenu;
   }
-  
   ngOnInit(): void {
   }
 
