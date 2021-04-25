@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { TailwindExampleComponent } from './tailwind-example/tailwind-example.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     CoursesComponent,
     LawfirmComponent,
     ContactFormComponent,
-    AngularMaterialDemoComponent
+    AngularMaterialDemoComponent,
+    TailwindExampleComponent
   ],
   imports: [
     BrowserModule,
