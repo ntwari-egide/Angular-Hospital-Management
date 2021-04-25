@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tailwind-example',
+  selector: 'tailwind-example',
   templateUrl: './tailwind-example.component.html',
   styleUrls: ['./tailwind-example.component.css']
 })
